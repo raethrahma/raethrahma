@@ -4,7 +4,7 @@ session_start();
 if (!isset($_SESSION['items'])) {
     $_SESSION['items'] = [];
 }
-
+//test kedua
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['add_item'])) {
     $item = [
         'id' => count($_SESSION['items']) + 1,
